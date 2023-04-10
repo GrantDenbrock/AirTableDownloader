@@ -1,3 +1,6 @@
+# Airtable Downloader
+Retrieves all records from an airtable database,, loads them into a df, selects a few columns, and writes those to google sheets.
+
 # Instructions for use:
 
 1. make a config file that looks like this:
@@ -7,7 +10,7 @@ base_id = '<xxxxxxxxxx>'
 api_key = '<xxxxxxxxxx>'
 table_name = '<Database Name>'
 spreadsheet_name = '<Spreadsheet Name>'
-filename = 'airtable-sync-382616-b95fdea30e82.json'
+filename = '<google_sheets_api_auth.json>'
 ```
 3. main.py next to config.py and your json api creds file.
 

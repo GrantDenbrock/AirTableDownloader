@@ -2,3 +2,5 @@ config*
 creds*
 *.csv
 testsheets-383317-deb0d21d757e.json
+./.idea
+airtable-sync-382616-b95fdea30e82.json

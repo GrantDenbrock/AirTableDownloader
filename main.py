@@ -56,12 +56,8 @@ df.to_csv('cut_records.csv')
 
 
 # export to google sheets
-# gc = gspread.service_account(filename=config.filename)
-gc = gspread.service_account(filename='testsheets-383317-deb0d21d757e.json')
-
-# spreadsheet_name= config.spreadsheet_name
-spreadsheet_name= 'Google API Testing'
-
+gc = gspread.service_account(filename=config.filename)
+spreadsheet_name= config.spreadsheet_name
 sh = gc.open(spreadsheet_name)
 worksheet = sh.get_worksheet(0)
 set_with_dataframe(worksheet, df)

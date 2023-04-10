@@ -1,21 +1,16 @@
-# Instructions
+# Instructions for use:
 
-Replace the 3 values at the top with your own values and run:
-
-```commandline
-python main.py
+1. make a config file that looks like this:
+2. Write your config file:
+```python
+base_id = '<xxxxxxxxxx>'
+api_key = '<xxxxxxxxxx>'
+table_name = '<Database Name>'
+spreadsheet_name = '<Spreadsheet Name>'
+filename = 'airtable-sync-382616-b95fdea30e82.json'
 ```
+3. main.py next to config.py and your json api creds file.
 
-It should generate a csv file called records.csv
+4. in terminal run ```pip3 install -r requirements.txt``` and this will install the dependenciesgit 
 
-You may/may not need to install requests. IF you do, you just need to run:
-```commandline
-pip install requests
-```
-
-and then run the script again.
-
-OR alternatively, you could just run: ```curl "https://api.airtable.com/v0/{baseID}/{tableName}?api_key={apiKey}" > records.json
-```
-
-Which would get you your database dump in json format instead of csv if that is helpful...
+5. in terminal run ```python3 main.py```
